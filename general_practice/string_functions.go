@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+var globalVar string
+
 func main() {
 	fmt.Println(strings.Compare("A", "B"))             // A < B
 	fmt.Println(strings.Compare("B", "A"))             // B > A

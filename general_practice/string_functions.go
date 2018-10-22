@@ -17,6 +17,16 @@ func main() {
 	fmt.Println(strings.Compare("", " ")) // Space is less
 	containsFunction()
 	containsAnyFunction()
+	equalFunc()
+	fieldsFunc()
+}
+
+func fieldsFunc() {
+	testString := "Australia is a country and continent surrounded by the Indian and Pacific oceans."
+	testArray := strings.Fields(testString)
+	for _, v := range testArray {
+		fmt.Println(v)
+	}
 }
 
 func equalFunc() {
